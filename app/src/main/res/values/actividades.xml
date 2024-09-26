@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actividades">
+        <item>Irse de parranda</item>
+        <item>Jugar Futbol</item>
+        <item>Gilear a las chicas</item>
+        <item>Atormentar al Huasaberto</item>
+    </string-array>
+</resources>
