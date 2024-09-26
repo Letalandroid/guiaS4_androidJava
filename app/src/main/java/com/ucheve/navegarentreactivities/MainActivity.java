@@ -23,13 +23,18 @@ public class MainActivity extends AppCompatActivity {
         spnActividad = findViewById(R.id.spnActividad);
         btnEnviar = findViewById(R.id.btnEnviar);
 
+        String r = String.format("Nombre: %s \n" +
+                                "Actividad: %s \n",
+                txtNombre.getText().toString(), spnActividad.getSelectedItem().toString());
+
         btnEnviar.setOnClickListener(v -> {
-            goToActivity();
+            goToActivity(r);
         });
     }
 
-    private void goToActivity() {
+    private void goToActivity(String r) {
         Intent intent = new Intent(this, MainActivity2.class);
+        intent.putExtra("result", r);
         startActivity(intent);
     }
 }
