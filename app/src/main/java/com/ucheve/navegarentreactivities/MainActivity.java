@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         spnActividad = findViewById(R.id.spnActividad);
         btnEnviar = findViewById(R.id.btnEnviar);
 
-        String r = String.format("Nombre: %s \n" +
-                                "Actividad: %s \n",
-                txtNombre.getText().toString(), spnActividad.getSelectedItem().toString());
-
         btnEnviar.setOnClickListener(v -> {
+            String r = String.format("Nombre: %s\n" +
+                            "Actividad: %s",
+                    txtNombre.getText().toString(), spnActividad.getSelectedItem().toString());
+
             goToActivity(r);
         });
     }
