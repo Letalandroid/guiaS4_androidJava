@@ -43,6 +43,7 @@
         android:layout_width="342dp"
         android:layout_height="46dp"
         android:layout_marginTop="12dp"
+        android:entries="@array/actividades"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="16dp" />
 
