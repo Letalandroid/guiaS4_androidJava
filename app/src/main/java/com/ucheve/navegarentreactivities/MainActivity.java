@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToActivity() {
-        Intent intent = new Intent();
+        Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
 }
