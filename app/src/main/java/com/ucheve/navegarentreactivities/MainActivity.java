@@ -25,8 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         btnEnviar.setOnClickListener(v -> {
             String r = String.format("Nombre: %s\n" +
-                            "Actividad: %s",
-                    txtNombre.getText().toString(), spnActividad.getSelectedItem().toString());
+                                    "Actividad: %s",
+                                    txtNombre.getText().toString(),
+                                    spnActividad.getSelectedItem().toString()
+            );
 
             goToActivity(r);
         });
