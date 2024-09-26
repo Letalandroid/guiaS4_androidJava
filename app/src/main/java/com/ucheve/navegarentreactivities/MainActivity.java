@@ -30,5 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void goToActivity() {
         Intent intent = new Intent();
+        startActivity(intent);
     }
 }
